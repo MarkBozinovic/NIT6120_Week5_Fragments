@@ -1,0 +1,27 @@
+//Mark Bozinovic s4114447 taken from NIT6120 Week5
+package com.vu.fragmentexample;
+
+import android.support.v7.app.AppCompatActivity;
+import android.support.v4.app.FragmentActivity; 
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+
+
+public class FragmentExampleActivity extends FragmentActivity implements ToolbarFragment.ToolbarListener
+{
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState)
+    {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_fragment_example);
+    }
+
+    public void onButtonClick(int fontsize, String text)
+    {
+        TextFragment textFragment = (TextFragment) getSupportFragmentManager().findFragmentById(R.id.text_fragment);
+
+        textFragment.changeTextProperties(fontsize, text);
+    }
+}

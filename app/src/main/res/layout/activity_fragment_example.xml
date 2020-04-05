@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentExampleActivity">
+
+    <fragment
+        android:id="@+id/text_fragment"
+        android:name="com.vu.fragmentexample.ToolbarFragment"
+        android:layout_width="138dp"
+        android:layout_height="39dp"
+        tools:layout="@layout/toolbar_fragment"
+        tools:layout_editor_absoluteX="104dp"
+        tools:layout_editor_absoluteY="0dp" />
+
+    <fragment
+        android:id="@+id/fragment2"
+        android:name="com.vu.fragmentexample.TextFragment"
+        android:layout_width="175dp"
+        android:layout_height="36dp"
+        tools:layout="@layout/text_fragment"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="99dp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="184dp"
+        android:layout_height="53dp"
+        android:text="Change Text"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="166dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="201dp"
+        android:layout_height="44dp"
+        android:text="Fragment Two"
+        android:textSize="30dp"
+        tools:layout_editor_absoluteX="88dp"
+        tools:layout_editor_absoluteY="292dp" />
+</android.support.constraint.ConstraintLayout>
